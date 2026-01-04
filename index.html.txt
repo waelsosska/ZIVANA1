@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zivana | Fashion Brand</title>
+
+  <style>
+    :root {
+      --main: #111;
+      --accent: #e91e63;
+      --bg: #fafafa;
+      --text: #333;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Arial", Tahoma, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      direction: rtl;
+    }
+
+    header {
+      background: linear-gradient(135deg, #000, #333);
+      color: #fff;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 38px;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 18px;
+      opacity: 0.9;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h2 {
+      margin-bottom: 25px;
+      text-align: center;
+    }
+
+    /* منتجات */
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .product {
+      background: #fff;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      transition: transform 0.3s;
+    }
+
+    .product:hover {
+      transform: translateY(-5px);
+    }
+
+    .product img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+    }
+
+    .product div {
+      padding: 15px;
+    }
+
+    .product h3 {
+      margin: 0 0 8px;
+      font-size: 18px;
+    }
+
+    .product span {
+      color: var(--accent);
+      font-weight: bold;
+    }
+
+    /* مميزات */
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .box {
+      background: #fff;
+      padding: 25px;
+      border-radius: 15px;
+      width: 260px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.06);
+      text-align: center;
+    }
+
+    /* CTA */
+    .cta {
+      background: var(--main);
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+      margin-top: 40px;
+    }
+
+    .cta a {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 14px 30px;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #eee;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+
+    /* موبايل */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 30px;
+      }
+
+      .product img {
+        height: 220px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>ZIVANA</h1>
+    <p>ستايل بناتي • أناقة عصرية • خامات مريحة</p>
+  </header>
+
+  <!-- المنتجات -->
+  <section>
+    <h2>أحدث القطع</h2>
+    <div class="products">
+
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1520975869010-65fcb24e3f8c" alt="">
+        <div>
+          <h3>تيشيرت كاجوال</h3>
+          <span>EGP 399</span>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246" alt="">
+        <div>
+          <h3>سويت شيرت حريمي</h3>
+          <span>EGP 699</span>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab" alt="">
+        <div>
+          <h3>تيشيرت أوفر سايز</h3>
+          <span>EGP 449</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- المميزات -->
+  <section>
+    <h2>ليه Zivana؟</h2>
+    <div class="features">
+      <div class="box">✨ تصميم عصري</div>
+      <div class="box">👕 خامات عالية الجودة</div>
+      <div class="box">💖 ستايل أنثوي مميز</div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="cta">
+    <h2>اطلبي دلوقتي</h2>
+    <p>توصيل لكل المحافظات</p>
+    <a href="#">WhatsApp / Instagram</a>
+  </div>
+
+  <footer>
+    © 2026 Zivana
+  </footer>
+
+</body>
+</html>
